@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sthefane, meu amor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFF8E1;
+            margin: 0;
+            padding: 20px;
+            color: #5D4037;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #E65100;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .girassol {
+            font-size: 3em;
+            text-align: center;
+            display: block;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .message {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        button {
+            background-color: #FFC107;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background-color: #FFA000;
+            transform: scale(1.05);
+        }
+        
+        .qualities {
+            margin-top: 30px;
+        }
+        
+        .quality {
+            background-color: #FFF3E0;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 5px solid #FFC107;
+        }
+        
+        .highlight {
+            background-color: #FFECB3;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sthefane, meu girassol</h1>
+    
+    <span class="girassol">🌻</span>
+    
+    <div class="message">
+        <h2>Oi amor...</h2>
+        <p>Eu sei que a gente tá meio brigado esses dias e eu queria muito pedir desculpas. A gente sempre fala que não vai brigar por besteira, mas acaba acontecendo, e eu odeio quando a gente fica assim.</p>
+        
+        <p>Você é tipo um girassol pra mim - sempre iluminando meus dias, mesmo quando eu tô meio pra baixo. E eu sou aquele trouxa que fica girando em volta de você igual a Terra gira em volta do Sol (tá, essa foi meio brega, mas você entendeu).</p>
+        
+        <span class="girassol">🌻</span>
+        
+        <p>Tô com saudade de tudo nosso: das mensagens bobas, das ligações que a gente fica sem assunto mas não quer desligar, até daquela música que a gente sempre canta junto errado de propósito.</p>
+        
+        <p>Eu sei que eu falo/fiz umas merdas às vezes, e você também, mas no final o que importa é que a gente se ama muito, né? Prometo tentar ser menos cabeça-dura e você promete não ficar brava comigo pra sempre? mensagem do SEU BEBÊ Ccomo vc dizz </p>
+    </div>
+    
+    <button onclick="alert('EU TE AMO MUITO! Vamos voltar a ficar bem? ❤️🌻')">Clica aqui se me perdoa</button>
+    
+    <div class="message">
+        <h2>Coisas que eu amo em você:</h2>
+        
+        <div class="qualities">
+            <div class="quality">
+                <h3>Seu sorriso</h3>
+                <p>Aquele sorriso que deixa qualquer dia ruim 100x melhor. Até quando você tenta disfarçar eu sei que tá sorrindo por dentro.</p>
+            </div>
+            
+            <div class="quality">
+                <h3>Seu jeito único</h3>
+                <p>Ninguém no mundo é igual você. Suas manias, seu jeito de falar, até quando você tá com raiva e faz aquele bico (que eu acho fofo).</p>
+            </div>
+            
+            <div class="quality">
+                <h3>Como você me entende</h3>
+                <p>Você sabe exatamente quando tô triste, quando tô com fome, quando tô com saudade... às vezes até antes de eu mesmo saber.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="message">
+        <h2>Sobre os "defeitos" que você diz ter...</h2>
+        <p>Amor, todo mundo tem uns paranauê, e os seus são parte do que te faz ser <span class="highlight">você</span>.</p>
+        
+        <p>Quando você diz que é <span class="highlight">ansiosa</span>: Eu vejo alguém que se importa muito com tudo.<br>
+        Quando acha que é <span class="highlight">dramática</span>: Eu vejo alguém que sente as coisas intensamente.<br>
+        Quando fala que é <span class="highlight">teimosa</span>: Eu vejo alguém que sabe o que quer.</p>
+        
+        <p>Não trocaria nada em você, nem os "defeitos", porque eles também fazem parte da pessoa que eu amo.</p>
+        
+        <span class="girassol">🌻</span>
+    </div>
+    
+    <button onclick="alert('Você é perfeita do jeito que é! Eu te amo muito! 🌻💛')">Clica aqui se sabe que é amada</button>
+    
+    <div class="message" style="text-align: center;">
+        <p>Espero que a gente possa superar essa fase ruim e voltar a ser feliz igual antes.</p>
+        <p>Eu te amo muito, Sthefane. Você é o meu girassol favorito ❤️🌻</p>
+    </div>
+
+    <script>
+        // Faz os girassóis pulsarem aleatoriamente
+        setInterval(function() {
+            const girassois = document.querySelectorAll('.girassol');
+            girassois.forEach(g => {
+                if(Math.random() > 0.7) {
+                    g.style.animation = 'none';
+                    void g.offsetWidth; // Trigger reflow
+                    g.style.animation = 'pulse 2s infinite';
+                }
+            });
+        }, 2000);
+    </script>
+</body>
+</html>
